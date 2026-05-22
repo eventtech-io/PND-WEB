@@ -166,3 +166,15 @@ The Collective page links to each profile first. External links are placeholders
 ## Visual style
 
 The build uses the supplied PND black-and-white brutalist key art as `assets/img/pnd-key-art.png` and the Open Graph preview image.
+
+
+## V2 collective updates
+
+This build includes profile pages for:
+- Chris Mansouri — Founder / Technical Director
+- Rob Handyside — Founder / Director
+- Ed Stone — Cinematographer
+- Roberto Pellegrino — Bespoke Sound Systems & Video
+
+Roberto's profile links to Roots Sensation Sound System:
+https://www.soundsystem.world/soundsystems/roots-sensation-sound-system/

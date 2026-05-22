@@ -1187,3 +1187,21 @@ button:focus-visible {
   height: auto;
   display: block;
 }
+
+/* V2 profile compatibility */
+.profile-wrap{max-width:1200px;margin:0 auto;padding:48px 24px 80px;}
+.back-link{display:inline-block;margin:20px 0 32px;text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;}
+.profile-hero{display:grid;grid-template-columns:minmax(240px,360px) 1fr;gap:36px;align-items:start;}
+.profile-panel,.profile-copy,.info-box{border:1px solid rgba(255,255,255,.28);padding:24px;background:rgba(255,255,255,.015);}
+.portrait-placeholder{aspect-ratio:1/1;border:1px solid rgba(255,255,255,.25);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;letter-spacing:.35em;text-transform:uppercase;background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,0));}
+.portrait-placeholder span{font-size:clamp(2rem,7vw,5rem);font-weight:800;letter-spacing:-.08em;}
+.portrait-placeholder small,.eyebrow{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;opacity:.78;}
+.focus-list{margin-top:24px;}
+.focus-list h2,.info-box h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.22em;margin-bottom:16px;}
+.focus-list p{margin:.45rem 0;font-size:.86rem;opacity:.82;}
+.profile-copy h1{font-size:clamp(3rem,10vw,8rem);line-height:.86;text-transform:uppercase;letter-spacing:.16em;margin:10px 0 24px;}
+.profile-copy .role{font-size:.85rem;text-transform:uppercase;letter-spacing:.24em;margin-bottom:32px;}
+.profile-copy p{max-width:760px;line-height:1.8;}
+.info-box{margin-top:32px;}
+.info-box a{text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;}
+@media (max-width:800px){.profile-hero{grid-template-columns:1fr}.profile-copy h1{letter-spacing:.08em}.site-header nav{gap:12px}}
