@@ -1205,3 +1205,76 @@ button:focus-visible {
 .info-box{margin-top:32px;}
 .info-box a{text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;}
 @media (max-width:800px){.profile-hero{grid-template-columns:1fr}.profile-copy h1{letter-spacing:.08em}.site-header nav{gap:12px}}
+
+
+.collective-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:0;
+margin-top:60px;
+border:1px solid rgba(255,255,255,.18);
+}
+
+.member-card{
+padding:32px;
+border-right:1px solid rgba(255,255,255,.12);
+border-bottom:1px solid rgba(255,255,255,.12);
+background:rgba(255,255,255,.015);
+min-height:340px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+transition:background .2s ease,border .2s ease;
+}
+
+.member-card:hover{
+background:rgba(255,255,255,.04);
+}
+
+.member-tag{
+display:inline-block;
+font-size:.65rem;
+text-transform:uppercase;
+letter-spacing:.22em;
+border:1px solid rgba(255,255,255,.25);
+padding:6px 10px;
+margin-bottom:20px;
+}
+
+.member-card h2{
+font-size:2rem;
+margin:0 0 16px;
+line-height:1;
+}
+
+.member-meta{
+font-size:.72rem;
+text-transform:uppercase;
+letter-spacing:.18em;
+opacity:.7;
+margin-bottom:20px;
+line-height:1.8;
+}
+
+.member-card p{
+line-height:1.8;
+}
+
+.member-links{
+margin-top:24px;
+}
+
+.member-links a{
+font-size:.72rem;
+text-transform:uppercase;
+letter-spacing:.18em;
+}
+
+@media(max-width:900px){
+.collective-grid{
+grid-template-columns:1fr;
+}
+.member-card{
+border-right:none;
+}
+}
