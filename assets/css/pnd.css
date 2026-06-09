@@ -99,8 +99,10 @@ body::after {
   width: min(220px, 40vw);
 }
 .brand-wordmark {
-  width: 100%; max-width: 220px; height: 52px;
-  object-fit: cover; object-position: left center;
+  width: auto;
+  max-width: 200px;
+  height: auto;
+  max-height: 44px;
   mix-blend-mode: screen;
   filter: grayscale(1) contrast(1.1) brightness(1.0);
 }
@@ -507,10 +509,7 @@ body::after {
 
 @media (max-width: 620px) {
   :root { --pad: 22px; }
-  .brand-lockup { width: 148px; }
-  .brand-wordmark { height: 38px; border-radius: 8px; }
-  .pnd-card--locked { border-radius: 18px; }
-  .pnd-card--locked img { border-radius: 18px; }
+  .brand-lockup { width: 160px; }
   .bottom-grid, .cards { grid-template-columns: 1fr; }
   .bottom-grid > div  { padding: 16px; }
   .display-title { font-size: clamp(32px, 10vw, 56px); }
