@@ -3,159 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PND — Party Never Dies. A collective exploring live culture, art, systems and digital experience.">
+  <meta name="description" content="Party Never Dies — culture, technology, experience and underground energy.">
   <meta property="og:title" content="PND — Party Never Dies">
-  <meta property="og:description" content="A collective exploring live culture, art, systems and digital experience.">
+  <meta property="og:description" content="Culture, technology, experience and underground energy.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://pnd.collective">
   <meta property="og:image" content="assets/img/og-image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PND — Party Never Dies">
-  <meta name="twitter:description" content="A collective exploring live culture, art, systems and digital experience.">
-  <meta name="twitter:image" content="assets/img/og-image.png">
   <title>PND — Party Never Dies</title>
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pnd.css">
 </head>
 <body>
-  <!-- Skip to content -->
   <a href="#main" class="skip-link">Skip to content</a>
-
-  <!-- Background texture -->
   <div class="bg-texture" aria-hidden="true"></div>
 
-  <!-- Site Header / Navigation -->
   <header class="site-header">
-    <a href="index.html" class="wordmark">PND</a>
+    <a href="index.html" class="brand-lockup" aria-label="PND home">
+      <img class="brand-wordmark" src="assets/img/pnd-locked-wordmark.png" alt="PND — Party Never Dies.">
+    </a>
     <nav class="site-nav" aria-label="Main navigation">
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
       <ul class="nav-list">
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="collective.html">Collective</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="founders.html">Founders</a></li>
+        <li><a href="dbase.html">Dbase</a></li>
+        <li><a href="event-tech-research.html">Event Tech Research</a></li>
       </ul>
     </nav>
+    <a class="membership" href="founders.html">Collective <span>+</span></a>
   </header>
 
-  <!-- Mobile Menu Overlay -->
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <button class="menu-close" aria-label="Close menu">&times;</button>
     <ul>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="collective.html">Collective</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="founders.html">Founders</a></li>
+      <li><a href="dbase.html">Dbase</a></li>
+      <li><a href="event-tech-research.html">Event Tech Research</a></li>
     </ul>
   </div>
 
-  <!-- Main Content -->
   <main id="main">
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
+      <div class="hero-inner">
+        <p class="kicker">Culture / Technology / Experience / Underground Energy</p>
 
-      <!-- Decorative: Top-left labels -->
-      <div class="hero__deco deco-labels" aria-hidden="true">
-        <span>Culture</span>
-        <span>Technology</span>
-        <span>Experience</span>
-        <span class="hairline hairline--short"></span>
-      </div>
-
-      <!-- Decorative: Top-right globe -->
-      <div class="hero__deco deco-globe" aria-hidden="true">
-        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="30" cy="30" r="28" stroke="white" stroke-width="0.5"/>
-          <ellipse cx="30" cy="30" rx="14" ry="28" stroke="white" stroke-width="0.5"/>
-          <ellipse cx="30" cy="30" rx="28" ry="10" stroke="white" stroke-width="0.5"/>
-          <line x1="2" y1="30" x2="58" y2="30" stroke="white" stroke-width="0.5"/>
-          <line x1="30" y1="2" x2="30" y2="58" stroke="white" stroke-width="0.5"/>
-          <path d="M8 16 Q30 20 52 16" stroke="white" stroke-width="0.5" fill="none"/>
-          <path d="M8 44 Q30 40 52 44" stroke="white" stroke-width="0.5" fill="none"/>
-        </svg>
-        <div class="deco-globe__label">PND//001</div>
-      </div>
-
-      <!-- Decorative: Right-edge vertical text -->
-      <div class="hero__deco deco-vert deco-vert--right" aria-hidden="true">
-        Live Culture Research Collective
-      </div>
-
-      <!-- Decorative: Left-edge vertical text -->
-      <div class="hero__deco deco-vert deco-vert--left" aria-hidden="true">
-        <div>Live Culture Research</div>
-        <div style="margin-top: 16px;">Event Systems</div>
-      </div>
-
-      <!-- Decorative: Bottom-left locations -->
-      <div class="hero__deco deco-locations" aria-hidden="true">
-        <span>Berlin</span>
-        <span>LDN</span>
-        <span>Worldwide</span>
-        <span class="hairline hairline--short"></span>
-      </div>
-
-      <!-- Decorative: Bottom-right image block -->
-      <div class="hero__deco deco-image-block" aria-hidden="true">
-        <div>
-          <div class="deco-image-block__frame">
-            <span class="plus-marker plus-marker--tl"></span>
-            <span class="plus-marker plus-marker--tr"></span>
-            <span class="plus-marker plus-marker--bl"></span>
-            <span class="plus-marker plus-marker--br"></span>
-            <img src="assets/img/tunnel.jpg" alt="Industrial tunnel perspective" loading="lazy">
-          </div>
-          <div class="deco-image-block__caption">Built For Live</div>
+        <div class="hero-keyart" aria-label="PND — Party Never Dies">
+          <img src="assets/img/pnd-key-art.png" alt="PND — Party Never Dies.">
         </div>
-        <svg class="deco-image-block__waveform" viewBox="0 0 24 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <polyline points="12,0 12,6 18,12 6,18 18,24 6,30 12,36 12,42 18,48 6,54 18,60 6,66 12,72 12,78 18,84 6,90 18,96 6,102 12,108 12,114 12,120"
-            stroke="white" stroke-width="0.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
 
-      <!-- Main Hero Content -->
-      <div class="hero__content">
-        <div class="hero__title-block">
-          <span class="plus-marker plus-marker--tl"></span>
-          <span class="plus-marker plus-marker--tr"></span>
-          <span class="plus-marker plus-marker--bl"></span>
-          <span class="plus-marker plus-marker--br"></span>
-          <h1 class="hero__title">PND</h1>
+        <p class="lede">
+          A culture-driven collective exploring the intersection of
+          <strong>technology</strong>, <strong>experience</strong>,
+          <strong>art</strong> and <strong>underground energy</strong>.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn" href="founders.html">View founders <span>+</span></a>
+          <a class="text-link" href="event-tech-research.html">Enter the research →</a>
         </div>
-        <p class="hero__subtitle">Party Never Dies</p>
-        <span class="hairline hairline--medium hero__subtitle-rule"></span>
-        <p class="hero__statement">A collective exploring live culture, art, systems and digital experience.</p>
-        <nav class="hero__nav" aria-label="Page navigation">
-          <a href="projects.html">Projects</a>
-          <a href="collective.html">Collective</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <span class="hairline hairline--short"></span>
       </div>
 
-      <!-- Credit -->
-      <div class="hero__credit">
-        Technical systems and research supported by Event Tech Research
-      </div>
+      <aside class="side-code" aria-hidden="true">
+        <span>[ 001 ]</span>
+        <div class="globe">◎</div>
+        <div class="wave"></div>
+        <small style="display:block;text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:#888;margin-top:12px;line-height:1.6">
+          LIVE CULTURE<br>RESEARCH<br>COLLECTIVE
+        </small>
+      </aside>
 
+      <div class="bottom-grid" aria-hidden="true">
+        <div><b>◎</b><span>The party never stops.<br>The energy never dies.</span></div>
+        <div><b>Berlin</b><span>52.5200° N<br>13.4050° E</span></div>
+        <div><b>LDN</b><span>51.5074° N<br>0.1278° W</span></div>
+        <div><b>Worldwide</b><span>Everywhere<br>All at once</span></div>
+        <div><b>Built for live</b><span>Systems · Sound · Culture</span></div>
+      </div>
+    </section>
+
+    <!-- Manifesto -->
+    <section class="section split">
+      <div>
+        <p class="kicker">002 // Manifesto</p>
+        <h1 class="display-title">Research.<br>Create.<br>Connect.<br>Repeat.</h1>
+      </div>
+      <p>
+        PND treats live culture as infrastructure: a collision of sound,
+        visual systems, environments, artists, audiences and technology.
+        The visual language is raw, high-contrast and built from rail corridors,
+        concrete textures, shadow-heavy architecture and strict editorial grids.
+      </p>
+    </section>
+
+    <!-- Pillars -->
+    <section class="section cards" aria-label="Core pillars">
+      <article class="card">
+        <span>01</span>
+        <h2>Culture</h2>
+        <p>Rooted in underground scenes and lived metropolitan energy.</p>
+      </article>
+      <article class="card">
+        <span>02</span>
+        <h2>Technology</h2>
+        <p>Systems, interfaces and technical design built around live moments.</p>
+      </article>
+      <article class="card">
+        <span>03</span>
+        <h2>Experience</h2>
+        <p>Events and environments designed to stay in memory.</p>
+      </article>
+      <article class="card">
+        <span>04</span>
+        <h2>Energy</h2>
+        <p>Sound, movement, people, pressure and momentum.</p>
+      </article>
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-left">PND // Party Never Dies</div>
-    <div class="footer-right">
-      Technical systems and research supported by
-      <a href="https://eventtechresearch.org" target="_blank" rel="noopener noreferrer">Event Tech Research</a>
-    </div>
+  <footer class="footer">
+    <div class="footer-mark">◎ <span>THE PARTY NEVER STOPS.<br>THE ENERGY NEVER DIES.</span></div>
+    <div>BERLIN · LDN · WORLDWIDE</div>
+    <div>PND.SYSTEMS · BUILT FOR LIVE</div>
   </footer>
 
   <script src="assets/js/main.js"></script>
