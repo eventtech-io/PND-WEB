@@ -545,11 +545,125 @@ body::after {
 }
 
 @media (max-width: 620px) {
-  :root { --pad: 22px; }
-  .brand-lockup { width: 160px; }
-  .bottom-grid, .cards { grid-template-columns: 1fr; }
-  .bottom-grid > div  { padding: 16px; }
-  .display-title { font-size: clamp(32px, 10vw, 56px); }
-  .btn { min-width: 100%; }
-  .hero { padding-bottom: 20px; }
+  :root { --pad: 20px; }
+
+  /* Header */
+  .site-header { height: 64px; }
+  .brand-lockup { width: 140px; }
+
+  /* Hero — portrait-friendly */
+  .hero {
+    min-height: 100svh;
+    min-height: 100vh;
+    padding-top: calc(64px + 40px);
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  /* On mobile replace left-right gradient with a simpler top-bottom overlay */
+  .hero::after {
+    background:
+      linear-gradient(180deg,
+        rgba(0,0,0,.72) 0%,
+        rgba(0,0,0,.30) 30%,
+        rgba(0,0,0,.20) 55%,
+        rgba(0,0,0,.80) 100%
+      ) !important;
+  }
+
+  .hero-inner {
+    width: 100%;
+    padding-top: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Key art — scale to fill the width */
+  .hero-keyart {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Lede */
+  .lede {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  /* CTA row — stack vertically */
+  .cta-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    margin-top: 28px;
+  }
+  .btn {
+    min-width: 100%;
+    justify-content: space-between;
+  }
+  .text-link { text-align: center; }
+
+  /* Bottom grid — 2 columns on phone */
+  .bottom-grid {
+    margin: 24px calc(-1 * var(--pad)) 0;
+    width: calc(100% + 2 * var(--pad));
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+  .bottom-grid > div { padding: 14px 16px; min-height: auto; }
+
+  /* Cards — single column */
+  .cards { grid-template-columns: 1fr; }
+
+  /* Display title */
+  .display-title { font-size: clamp(34px, 11vw, 56px); }
+
+  /* Sections */
+  .section { padding: clamp(48px, 8vh, 80px) var(--pad); }
+
+  /* Split — stack copy below */
+  .split { gap: 32px; }
+  .split > p { margin-top: 0; }
+
+  /* Profile */
+  .profile-card { grid-template-rows: 200px 1fr; }
+  .profile-content { padding: 24px; }
+  .profile-hero { padding-top: calc(64px + 40px); gap: 36px; }
+
+  /* Readout */
+  .readout { min-height: auto; padding: 22px; }
+
+  /* List rows */
+  .list-row { padding: 20px 0; gap: 6px; }
+
+  /* Footer */
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 24px var(--pad);
+    text-align: left;
+  }
+  .footer-mark { gap: 12px; }
+  .footer-mark .globe-wire { width: 32px; height: 32px; }
+}
+
+@media (max-width: 620px) {
+  body::before {
+    background:
+      rgba(0,0,0,.55),
+      url('../img/texture-shadow-architecture.jpg') center / cover no-repeat;
+    background-blend-mode: normal, screen;
+    opacity: .80;
+  }
+}
+
+@media (max-width: 380px) {
+  :root { --pad: 16px; }
+  .bottom-grid { grid-template-columns: 1fr; }
+  .display-title { font-size: 30px; }
 }
