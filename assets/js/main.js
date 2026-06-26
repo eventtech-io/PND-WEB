@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.querySelector('.menu-toggle');
   const mobileMenu = document.querySelector('.mobile-menu');
-  const menuClose = document.querySelector('.menu-close');
+  const menuClose  = document.querySelector('.menu-close');
   const closeMenu = () => {
     mobileMenu?.classList.remove('open');
     mobileMenu?.setAttribute('aria-hidden', 'true');
@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggle?.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
   };
-  menuToggle?.addEventListener('click', () => mobileMenu?.classList.contains('open') ? closeMenu() : openMenu());
+  menuToggle?.addEventListener('click', () =>
+    mobileMenu?.classList.contains('open') ? closeMenu() : openMenu()
+  );
   menuClose?.addEventListener('click', closeMenu);
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
   document.querySelectorAll('.mobile-menu a').forEach(a => a.addEventListener('click', closeMenu));
